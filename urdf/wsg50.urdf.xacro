@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="wsg50" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Import wsg50 macro -->
+  <xacro:include filename="$(find uclv_wsg50_simulation)/urdf/wsg50.xacro" />
+  
+  <xacro:wsg50
+    prefix="''"  
+    scale="1.0"
+    base_link="base_link"
+    mimic_joints="true"
+    prefix_finger_left="left/"
+    finger_flange_left_link="finger_flange_link"
+    prefix_finger_right="right/"
+    finger_flange_right_link="finger_flange_link" 
+  />
+
+</robot>
